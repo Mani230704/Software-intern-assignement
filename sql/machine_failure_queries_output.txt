@@ -1,0 +1,18 @@
+Example SQL output for machine_status:
+
+1. Class balance
+machine_failure | total_rows
+0              | 3
+1              | 2
+
+2. Risk-prone machines
+machine_id | machine_type | torque_nm | rotational_speed_rpm | tool_wear_min
+4          | H            | 61.2      | 1280                 | 220
+2          | M            | 48.0      | 1420                 | 180
+
+3. Failure records
+machine_id | machine_type | air_temp_k | process_temp_k | rotational_speed_rpm | torque_nm | tool_wear_min | machine_failure
+2          | M            | 300.9      | 311.2          | 1420                 | 48.0      | 180           | 1
+4          | H            | 305.1      | 315.0          | 1280                 | 61.2      | 220           | 1
+
+This output reflects the sample data in the SQL script and is intended to demonstrate the logic used in the assignment.
